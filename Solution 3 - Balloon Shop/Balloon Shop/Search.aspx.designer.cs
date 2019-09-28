@@ -10,51 +10,33 @@
 namespace Balloon_Shop {
     
     
-    public partial class Site {
+    public partial class Search {
         
         /// <summary>
-        /// HeadContent control.
+        /// lblTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+        protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
-        /// form1 control.
+        /// lblDes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblDes;
         
         /// <summary>
-        /// SearchBox1 control.
+        /// ProductsList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Balloon_Shop.Controls.SearchBox SearchBox1;
-        
-        /// <summary>
-        /// CatList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Balloon_Shop.Controls.CartList CatList;
-        
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::Balloon_Shop.Controls.ProductsList ProductsList1;
     }
 }

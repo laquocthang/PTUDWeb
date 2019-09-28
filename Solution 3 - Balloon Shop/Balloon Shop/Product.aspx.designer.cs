@@ -10,51 +10,51 @@
 namespace Balloon_Shop {
     
     
-    public partial class Site {
+    public partial class Products {
         
         /// <summary>
-        /// HeadContent control.
+        /// lblName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+        protected global::System.Web.UI.WebControls.Label lblName;
         
         /// <summary>
-        /// form1 control.
+        /// prodImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Image prodImage;
         
         /// <summary>
-        /// SearchBox1 control.
+        /// lblDes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Balloon_Shop.Controls.SearchBox SearchBox1;
+        protected global::System.Web.UI.WebControls.Label lblDes;
         
         /// <summary>
-        /// CatList control.
+        /// lblPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Balloon_Shop.Controls.CartList CatList;
+        protected global::System.Web.UI.WebControls.Label lblPrice;
         
         /// <summary>
-        /// MainContent control.
+        /// lnkAddToCart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.HyperLink lnkAddToCart;
     }
 }

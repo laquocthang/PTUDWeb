@@ -76,5 +76,27 @@ namespace DataAccess.Classes
 				return new List<Product>();
 			}
 		}
+
+		public static List<Product> Search(string searchString, string page, out int howManyPages)
+		{
+			IDataReader reader = null;
+			try
+			{
+				int pageSize = GlobalConfiguration.PageSize;
+				reader = DataProvider.Instance.ExecuteReader("Product_Search", searchString, GlobalConfiguration.DescriptionLength, page, GlobalConfiguration.PageSize);
+				reader.Read();
+				howManyPages = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
+				reader.NextResult();
+				return CBO.FillCollection<Product>(reader);
+			}
+			catch
+			{
+				if (reader != null && reader.IsClosed == false)
+					reader.Close();
+				howManyPages = 0;
+				return new List<Product>();
+			}
+		}
+
 	}
 }

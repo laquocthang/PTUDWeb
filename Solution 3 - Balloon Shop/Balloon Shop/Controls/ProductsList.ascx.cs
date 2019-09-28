@@ -15,10 +15,20 @@ namespace Balloon_Shop.Controls
 		private void PopulateControls()
 		{
 			int howManyPages = 0;
+
 			string categoryID = Request.QueryString["CategoryID"] ?? "";
 			string page = Request.QueryString["Page"] ?? "1";
+			string searchString = Request.QueryString["Search"] ?? "";
 			string firstPageUrl = "";
 			string pagerFormat = "";
+
+			if (searchString != "")
+			{
+				dlProdList.DataSource = Product.Search(searchString, page, out howManyPages);
+				dlProdList.DataBind();
+				firstPageUrl = Link.ToSearch(searchString, "1");
+				pagerFormat = Link.ToSearch(searchString, "{0}");
+			}
 			if (categoryID != "")
 			{
 				dlProdList.DataSource = Product.InCategory(categoryID, page, out howManyPages);

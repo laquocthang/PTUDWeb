@@ -55,5 +55,17 @@ namespace DataAccess
 		{
 			return BuildAbsolute(string.Format("AddToCart.aspx?ProductID={0}", productID));
 		}
+
+		public static string ToSearch(string searchString, string page)
+		{
+			if (page == "1")
+				return BuildAbsolute(string.Format("Search.aspx?Search={0}", searchString));
+			return BuildAbsolute(String.Format("Search.aspx?Search={0}&Page={1}", searchString, page));
+		}
+
+		public static string ToSearch(string searchString)
+		{
+			return ToSearch(searchString, "1");
+		}
 	}
 }

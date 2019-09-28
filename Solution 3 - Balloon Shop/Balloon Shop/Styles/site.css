@@ -215,3 +215,19 @@ a.button {
 	font-weight: bold;
 	text-decoration: underline;
 }
+
+.search input.text {
+	background-color: White;
+	border: solid 1px #c5c5c5;
+	width: 95%;
+	margin-bottom: 0.5em;
+	padding: 2px;
+}
+
+.search input.button {
+	background: url('../images/search.gif') no-repeat;
+	width: 79px;
+	height: 20px;
+	border: solid 1px maroon;
+	cursor: pointer;
+}

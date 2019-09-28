@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Balloon_Shop.Default" %>
+﻿<%@ Page Title="Homepage" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Balloon_Shop.Default" %>
 
 <%@ Register Src="~/Controls/ProductsList.ascx" TagPrefix="uc1" TagName="ProductsList" %>
 
