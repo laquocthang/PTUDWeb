@@ -13,6 +13,7 @@ namespace Balloon_Shop
 
 		private void PopulateControls()
 		{
+			//Lấy giá trị của CategoryID, nếu trống thì lấy ""
 			string categoryID = Request.QueryString["CategoryID"] ?? "";
 			Category data = Category.Single(categoryID);
 			if (data != null)
