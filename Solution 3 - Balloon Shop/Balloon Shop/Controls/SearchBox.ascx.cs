@@ -12,7 +12,12 @@ namespace Balloon_Shop.Controls
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			if(!IsPostBack)
+			{
+				string searchString = Request.QueryString["Search"] ?? "";
+				if (searchString != "")
+					txtKey.Text = searchString;
+			}
 		}
 
 		protected void btnSearch_Click(object sender, EventArgs e)

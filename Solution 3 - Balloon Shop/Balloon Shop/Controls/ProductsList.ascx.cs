@@ -29,7 +29,7 @@ namespace Balloon_Shop.Controls
 				firstPageUrl = Link.ToSearch(searchString, "1");
 				pagerFormat = Link.ToSearch(searchString, "{0}");
 			}
-			if (categoryID != "")
+			else if (categoryID != "")
 			{
 				dlProdList.DataSource = Product.InCategory(categoryID, page, out howManyPages);
 				dlProdList.DataBind();
