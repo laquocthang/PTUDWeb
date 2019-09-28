@@ -151,3 +151,67 @@ a.button {
 	margin-bottom: 0.5em;
 	display: block;
 }
+
+.pager {
+	margin-top: 1em;
+	text-align: right;
+}
+
+	.pager a.disabled {
+		text-decoration: none;
+		color: Gray;
+	}
+
+	.pager a.current {
+		text-decoration: none;
+		color: Black;
+		font-weight: bold;
+	}
+
+.prod.list {
+	width: 335px;
+	padding-right: 10px;
+	margin-bottom: 2em;
+}
+
+.prod a {
+	text-decoration: none;
+}
+
+.prod img {
+	border: 2px solid #c6e1ec;
+	float: left;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.prod.list img {
+	width: 100px;
+}
+
+.prod.list .detail {
+	margin-left: 115px;
+}
+
+.prod h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 10px 1px 0 0;
+}
+
+.prod p {
+	margin-bottom: 0.3em;
+}
+
+.prod .price {
+	font-weight: bold;
+}
+
+	.prod .price span {
+		color: Red;
+	}
+
+.prod .addToCart a {
+	font-weight: bold;
+	text-decoration: underline;
+}

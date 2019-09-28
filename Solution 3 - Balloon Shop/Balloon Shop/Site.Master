@@ -8,9 +8,9 @@
 <html>
 <head runat="server">
 	<title>Balloon Shop</title>
-	<link href="Styles/site.css" rel="stylesheet" />
-	<link href="Styles/reset.css" rel="stylesheet" />
-	<link href="Styles/960.css" rel="stylesheet" />
+	<link href="Styles/reset.css" rel="stylesheet" type="text/css"/>
+	<link href="Styles/960.css" rel="stylesheet" type="text/css"/>
+	<link href="Styles/site.css" rel="stylesheet" type="text/css"/>
 	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
 	</asp:ContentPlaceHolder>
 </head>
@@ -48,7 +48,7 @@
 			<div class="clear"></div>
 			<!--List of Category-->
 			<div class="grid_3" id="left">
-				<uc1:CatList runat="server" id="CatList" />
+				<uc1:CatList runat="server" ID="CatList" />
 			</div>
 			<!--Content-->
 			<div class="grid_9" id="right">

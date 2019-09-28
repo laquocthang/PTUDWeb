@@ -7,36 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Balloon_Shop {
+namespace Balloon_Shop.Controls {
     
     
-    public partial class Catalog {
+    public partial class ProductsList {
         
         /// <summary>
-        /// lblTitle control.
+        /// pagerTop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::Balloon_Shop.Controls.Pager pagerTop;
         
         /// <summary>
-        /// lblDes control.
+        /// dlProdList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDes;
+        protected global::System.Web.UI.WebControls.DataList dlProdList;
         
         /// <summary>
-        /// ProductsList1 control.
+        /// pagerBottom control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Balloon_Shop.Controls.ProductsList ProductsList1;
+        protected global::Balloon_Shop.Controls.Pager pagerBottom;
     }
 }

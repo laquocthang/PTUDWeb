@@ -70,6 +70,7 @@
     <Content Include="Catalog.aspx" />
     <Content Include="Controls\CatList.ascx" />
     <Content Include="Controls\Pager.ascx" />
+    <Content Include="Controls\ProductsList.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\a1.gif" />
@@ -232,6 +233,13 @@
     </Compile>
     <Compile Include="Controls\Pager.ascx.designer.cs">
       <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductsList.ascx.cs">
+      <DependentUpon>ProductsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductsList.ascx.designer.cs">
+      <DependentUpon>ProductsList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
