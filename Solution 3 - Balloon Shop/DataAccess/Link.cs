@@ -67,5 +67,17 @@ namespace DataAccess
 		{
 			return ToSearch(searchString, "1");
 		}
+
+		public static string ToAdminProduct(string page)
+		{
+			if (page == "1")
+				return BuildAbsolute(string.Format("Admin/Product.aspx"));
+			return BuildAbsolute(String.Format("Admin/Product.aspx?Page={0}", page));
+		}
+
+		public static string ToAdminProduct()
+		{
+			return ToAdminProduct("1");
+		}
 	}
 }

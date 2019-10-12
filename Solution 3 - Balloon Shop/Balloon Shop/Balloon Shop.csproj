@@ -70,6 +70,7 @@
     <Content Include="Admin\Category.aspx" />
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\EditCategory.aspx" />
+    <Content Include="Admin\EditProduct.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Scripts\jquery-1.4.1.min.js" />
     <Content Include="Admin\Scripts\js.js" />
@@ -253,6 +254,13 @@
     </Compile>
     <Compile Include="Admin\EditCategory.aspx.designer.cs">
       <DependentUpon>EditCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>

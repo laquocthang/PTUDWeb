@@ -98,5 +98,77 @@ namespace DataAccess.Classes
 			}
 		}
 
+		public static bool Add(Product product)
+		{
+			try
+			{
+				object result = DataProvider.Instance.ExecuteNonQueryWithOutput("@ProductID", "Product_Add", product.ProductID, product.CategoryID, product.Name, product.Description, product.Price, product.Thumbnail, product.Image, product.PromoFront);
+				return Convert.ToInt32(result) > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		public static bool Update(Product product)
+		{
+			try
+			{
+				int result = DataProvider.Instance.ExecuteNonQuery("Product_Update", product.ProductID, product.CategoryID, product.Name, product.Description, product.Price, product.Thumbnail, product.Image, product.PromoFront);
+				return result > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		public static bool UpdatePromo(string productID, bool promo)
+		{
+			try
+			{
+				int result = DataProvider.Instance.ExecuteNonQuery("Product_UpdatePromo", Convert.ToInt32(productID), promo);
+				return result > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		public static bool Delete(string productID)
+		{
+			try
+			{
+				int result = DataProvider.Instance.ExecuteNonQuery("Product_Delete", Convert.ToInt32(productID));
+				return result > 0;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		public static List<Product> Paging(string page, out int howManyPages)
+		{
+			IDataReader reader = null;
+			try
+			{
+				int pageSize = GlobalConfiguration.PageSize;
+				reader = DataProvider.Instance.ExecuteReader("Product_Paging", page, GlobalConfiguration.PageSize);
+				reader.Read();
+				howManyPages = (int)Math.Ceiling((double)reader.GetInt32(0) / (double)pageSize);
+				reader.NextResult();
+				return CBO.FillCollection<Product>(reader);
+			}
+			catch
+			{
+				if (reader != null && reader.IsClosed == false)
+					reader.Close();
+				howManyPages = 0;
+				return new List<Product>();
+			}
+		}
 	}
 }

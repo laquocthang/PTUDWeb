@@ -151,3 +151,50 @@ p {
 .form .failureNotification {
 	color: Red;
 }
+
+.list {
+	width: 100%;
+}
+
+	.list th {
+		text-align: left;
+		padding: 6px 5px;
+		border-bottom: solid 3px #6678B1;
+		vertical-align: middle;
+	}
+
+		.list th a {
+			color: Maroon;
+		}
+
+	.list td {
+		vertical-align: middle;
+		text-align: center;
+		padding: 6px 2px;
+	}
+
+	.list tr.even {
+		background-color: #eee;
+	}
+
+	.list .cid {
+		width: 20px;
+	}
+
+	.list .small {
+		width: 30px;
+	}
+
+	.list .link {
+		text-align: left;
+	}
+
+	.list .image {
+		width: 24px;
+		height: 24px;
+	}
+
+	.list .id {
+		width: 20px;
+		text-align: right;
+	}
