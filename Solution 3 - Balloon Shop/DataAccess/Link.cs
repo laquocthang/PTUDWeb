@@ -79,5 +79,19 @@ namespace DataAccess
 		{
 			return ToAdminProduct("1");
 		}
+
+		public static string ToAdminUpload(string clientId, string page)
+		{
+			if (page == "1")
+				return BuildAbsolute(
+				String.Format("Admin/Upload.aspx?id={0}", clientId));
+			return BuildAbsolute(
+			String.Format("Admin/Upload.aspx?id={0}&Page={1}", clientId, page));
+		}
+
+		public static string ToAdminUpload(string clientId)
+		{
+			return ToAdminUpload(clientId, "1");
+		}
 	}
 }

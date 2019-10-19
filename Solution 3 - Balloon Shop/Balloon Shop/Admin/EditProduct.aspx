@@ -36,22 +36,27 @@
 		<tr>
 			<td class="label">Thumbnail:</td>
 			<td>
-				<asp:Label ID="lblThumbnail" runat="server"></asp:Label>
+				<%--<asp:Label ID="lblThumbnail" runat="server"></asp:Label>
 				<asp:FileUpload ID="fuThumbnail" runat="server" />
-				<asp:Button ID="btnUploadThumbnail" runat="server" Text="Upload" />
+				<asp:Button ID="btnUploadThumbnail" runat="server" Text="Upload" />--%>
+				<asp:TextBox runat="server" ID="txtThumbnail" CssClass="textEntry" Width="300" />
+				<a href="javascript:void(0)" target="_blank" onclick='window.open("Upload.aspx?id=<%=txtThumbnail.ClientID %>","Upload", "height=400,width=550");return false;'>Select</a>
 			</td>
 		</tr>
 		<tr>
 			<td class="label">Image:</td>
 			<td>
-				<asp:Label ID="lblImage" runat="server"></asp:Label>
+				<%--<asp:Label ID="lblImage" runat="server"></asp:Label>
 				<asp:FileUpload ID="fuImage" runat="server" />
-				<asp:Button ID="btnUploadImage" runat="server" Text="Upload" />
+				<asp:Button ID="btnUploadImage" runat="server" Text="Upload" />--%>
+				<asp:TextBox runat="server" ID="txtImage" CssClass="textEntry" Width="300" />
+				<a href="javascript:void(0)" target="_blank" onclick='window.open("Upload.aspx?id=<%=txtImage.ClientID %>", "Upload", "height=400,width=550");return false;'>Select</a>
 			</td>
 		</tr>
 		<tr>
 			<td class="label">Promo Front:</td>
-			<td><asp:CheckBox runat="server" ID="chkPromoFront" /></td>
+			<td>
+				<asp:CheckBox runat="server" ID="chkPromoFront" /></td>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>

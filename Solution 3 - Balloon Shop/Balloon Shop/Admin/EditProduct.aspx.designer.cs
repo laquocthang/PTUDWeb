@@ -96,58 +96,22 @@ namespace Balloon_Shop.Admin
 		protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
 		/// <summary>
-		/// lblThumbnail control.
+		/// txtThumbnail control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label lblThumbnail;
+		protected global::System.Web.UI.WebControls.TextBox txtThumbnail;
 
 		/// <summary>
-		/// fuThumbnail control.
+		/// txtImage control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.FileUpload fuThumbnail;
-
-		/// <summary>
-		/// btnUploadThumbnail control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button btnUploadThumbnail;
-
-		/// <summary>
-		/// lblImage control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Label lblImage;
-
-		/// <summary>
-		/// fuImage control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.FileUpload fuImage;
-
-		/// <summary>
-		/// btnUploadImage control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button btnUploadImage;
+		protected global::System.Web.UI.WebControls.TextBox txtImage;
 
 		/// <summary>
 		/// chkPromoFront control.

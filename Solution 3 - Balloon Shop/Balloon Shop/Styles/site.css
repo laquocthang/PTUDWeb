@@ -231,3 +231,28 @@ a.button {
 	border: solid 1px maroon;
 	cursor: pointer;
 }
+
+.upload {
+	font-size: 1.2em;
+	padding: 4px;
+}
+
+	.upload hr {
+		margin-top: 1em;
+		color: Maroon;
+	}
+
+.imagelist {
+	overflow: scroll;
+	height: 265px;
+}
+
+	.imagelist img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.imagelist td {
+		text-align: center;
+		padding: 2px;
+	}

@@ -35,8 +35,8 @@ namespace Balloon_Shop.Admin
 				txtName.Text = product.Name;
 				txtDes.Text = product.Description;
 				txtPrice.Text = product.Price.HasValue ? product.Price.Value.ToString() : "";
-				lblImage.Text = product.Image;
-				lblThumbnail.Text = product.Thumbnail;
+				txtImage.Text = product.Image;
+				txtThumbnail.Text = product.Thumbnail;
 				chkPromoFront.Checked = product.PromoFront.GetValueOrDefault(false);
 				ddlCategory.SelectedValue = product.CategoryID.ToString();
 				btnReset.Visible = false;
@@ -52,8 +52,8 @@ namespace Balloon_Shop.Admin
 		{
 			base.OnInit(e);
 			btnSave.Click += new EventHandler(btnSave_Click);
-			btnUploadImage.Click += new EventHandler(btnUploadImage_Click);
-			btnUploadThumbnail.Click += new EventHandler(btnUploadThumbnail_Click);
+			//btnUploadImage.Click += new EventHandler(btnUploadImage_Click);
+			//btnUploadThumbnail.Click += new EventHandler(btnUploadThumbnail_Click);
 		}
 
 		private bool CheckFileType(string filename)
@@ -98,12 +98,12 @@ namespace Balloon_Shop.Admin
 
 		private void btnUploadThumbnail_Click(object sender, EventArgs e)
 		{
-			Upload(fuThumbnail, lblThumbnail);
+			//Upload(fuThumbnail, lblThumbnail);
 		}
 
 		private void btnUploadImage_Click(object sender, EventArgs e)
 		{
-			Upload(fuImage, lblImage);
+			//Upload(fuImage, lblImage);
 		}
 
 		private void btnSave_Click(object sender, EventArgs e)
@@ -138,8 +138,8 @@ namespace Balloon_Shop.Admin
 			product.Description = txtDes.Text;
 			if (txtPrice.Text != "")
 				product.Price = Convert.ToDecimal(txtPrice.Text);
-			product.Thumbnail = lblThumbnail.Text;
-			product.Image = lblImage.Text;
+			product.Thumbnail = txtThumbnail.Text;
+			product.Image = txtImage.Text;
 			product.CategoryID = Convert.ToInt32(ddlCategory.SelectedValue);
 			product.PromoFront = chkPromoFront.Checked;
 			return product;
@@ -150,8 +150,10 @@ namespace Balloon_Shop.Admin
 			txtName.Text = "";
 			txtDes.Text = "";
 			txtPrice.Text = "";
-			lblThumbnail.Text = "";
-			lblImage.Text = "";
+			//lblThumbnail.Text = "";
+			//lblImage.Text = "";
+			txtImage.Text = "";
+			txtThumbnail.Text = "";
 			chkPromoFront.Checked = false;
 			ddlCategory.SelectedValue = "0";
 		}
