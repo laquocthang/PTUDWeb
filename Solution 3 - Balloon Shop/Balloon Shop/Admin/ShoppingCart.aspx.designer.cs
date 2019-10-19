@@ -7,65 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Balloon_Shop
+namespace Balloon_Shop.Admin
 {
 
 
-	public partial class Site
+	public partial class ShoppingCarts
 	{
 
 		/// <summary>
-		/// HeadContent control.
+		/// lblCount control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+		protected global::System.Web.UI.WebControls.Label lblCount;
 
 		/// <summary>
-		/// form1 control.
+		/// ddlDay control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+		protected global::System.Web.UI.WebControls.DropDownList ddlDay;
 
 		/// <summary>
-		/// UserInfo1 control.
+		/// btnCount control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::Balloon_Shop.Controls.UserInfo UserInfo1;
+		protected global::System.Web.UI.WebControls.Button btnCount;
 
 		/// <summary>
-		/// SearchBox1 control.
+		/// btnDelete control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::Balloon_Shop.Controls.SearchBox SearchBox1;
-
-		/// <summary>
-		/// CatList control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::Balloon_Shop.Controls.CartList CatList;
-
-		/// <summary>
-		/// MainContent control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+		protected global::System.Web.UI.WebControls.Button btnDelete;
 	}
 }

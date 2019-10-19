@@ -23,6 +23,8 @@
 				<div id="mainmenu">
 					<asp:HyperLink ID="lnkCPanel" NavigateUrl="~/Admin/" runat="server">Control Panel</asp:HyperLink>
 					<asp:HyperLink ID="lnkCategory" NavigateUrl="~/Admin/Category.aspx" runat="server">Category</asp:HyperLink>
+					<asp:HyperLink ID="lnlProduct" NavigateUrl="~/Admin/Product.aspx" runat="server">Product</asp:HyperLink>
+					<asp:HyperLink ID="lnkShoppingCart" NavigateUrl="~/Admin/ShoppingCart.aspx" runat="server">Shopping Cart</asp:HyperLink>
 				</div>
 			</div>
 			<div class="grid_16">

@@ -256,3 +256,113 @@ a.button {
 		text-align: center;
 		padding: 2px;
 	}
+
+.cart .items {
+	width: 100%;
+	border-bottom: solid 4px maroon;
+}
+
+.items th {
+	background-color: Maroon;
+	color: White;
+	padding: 5px 2px;
+}
+
+	.items th a {
+		color: Maroon;
+	}
+
+.items td {
+	vertical-align: middle;
+	text-align: center;
+	padding: 5px 2px;
+}
+
+	.items td.small {
+		width: 70px;
+	}
+
+	.items td.name {
+		text-align: left;
+	}
+
+.items input.quantity {
+	width: 30px;
+	text-align: center;
+	background-color: White;
+	border: solid 1px #c5c5c5;
+}
+
+.items .itemsalt {
+	background-color: #eee;
+}
+
+.cart .total {
+	text-align: right;
+	font-weight: bold;
+	margin: 1em 0;
+}
+
+.cart .status {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1em;
+	color: Red;
+}
+
+.cart .toolbar {
+	text-align: right;
+}
+
+.cartTotal {
+	color: Red;
+}
+
+.cartsummary {
+	padding: 2em 0.5em 0 0.5em;
+}
+
+	.cartsummary hr {
+		height: 2px;
+		background-color: Maroon;
+		border: 0;
+		margin: 0;
+		width: 190px;
+	}
+
+.cs-title {
+	margin: 0.5em 0;
+	font-weight: bold;
+}
+
+.cartsummary a.viewdetail {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.cartsummary table td {
+	font-size: 0.85em;
+}
+
+.cartsummary td {
+	padding: 2px 0;
+}
+
+	.cartsummary td a {
+		text-decoration: none;
+	}
+
+.cs-total {
+	margin-top: 0.8em;
+	font-size: 0.85em;
+	font-weight: bold;
+}
+
+.userinfo {
+	text-align: center;
+}
+
+	.userinfo h3 {
+		color: Black;
+	}

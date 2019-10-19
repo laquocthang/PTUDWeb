@@ -112,5 +112,24 @@ namespace DataAccess.Classes
 				return 0.00;
 			}
 		}
+
+		public static int CountOldCarts(byte days)
+		{
+			try
+			{
+				object result = DataProvider.Instance.ExecuteScalar("ShoppingCart_CountOldCarts", days);
+				return Convert.ToInt32(result);
+			}
+			catch
+			{
+				return -1;
+			}
+		}
+
+		public static bool DeleteOldCarts(byte days)
+		{
+			int result = DataProvider.Instance.ExecuteNonQuery("ShoppingCart_DeleteOldCarts", days);
+			return result > 0;
+		}
 	}
 }

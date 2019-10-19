@@ -7,65 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Balloon_Shop
+namespace Balloon_Shop.Controls
 {
 
 
-	public partial class Site
+	public partial class CartSummary
 	{
 
 		/// <summary>
-		/// HeadContent control.
+		/// lblCartSummary control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+		protected global::System.Web.UI.WebControls.Label lblCartSummary;
 
 		/// <summary>
-		/// form1 control.
+		/// lnkViewCart control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+		protected global::System.Web.UI.WebControls.HyperLink lnkViewCart;
 
 		/// <summary>
-		/// UserInfo1 control.
+		/// repItem control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::Balloon_Shop.Controls.UserInfo UserInfo1;
+		protected global::System.Web.UI.WebControls.Repeater repItem;
 
 		/// <summary>
-		/// SearchBox1 control.
+		/// lblTotal control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::Balloon_Shop.Controls.SearchBox SearchBox1;
-
-		/// <summary>
-		/// CatList control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::Balloon_Shop.Controls.CartList CatList;
-
-		/// <summary>
-		/// MainContent control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+		protected global::System.Web.UI.WebControls.Label lblTotal;
 	}
 }

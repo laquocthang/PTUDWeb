@@ -6,6 +6,9 @@
 <%@ Register src="Controls/SearchBox.ascx" tagname="SearchBox" tagprefix="uc2" %>
 
 
+<%@ Register src="Controls/UserInfo.ascx" tagname="UserInfo" tagprefix="uc3" %>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -51,6 +54,7 @@
 			<div class="clear"></div>
 			<!--List of Category-->
 			<div class="grid_3" id="left">
+				<uc3:UserInfo ID="UserInfo1" runat="server" />
 				<uc2:SearchBox ID="SearchBox1" runat="server" />
 				<uc1:CatList runat="server" ID="CatList" />
 			</div>

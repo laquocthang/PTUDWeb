@@ -7,74 +7,83 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Balloon_Shop.Admin
+namespace Balloon_Shop
 {
 
 
-	public partial class Admin
+	public partial class Cart
 	{
 
 		/// <summary>
-		/// HeadContent control.
+		/// lblTitle control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+		protected global::System.Web.UI.WebControls.Label lblTitle;
 
 		/// <summary>
-		/// form1 control.
+		/// lblStatus control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+		protected global::System.Web.UI.WebControls.Label lblStatus;
 
 		/// <summary>
-		/// lnkCPanel control.
+		/// grid control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkCPanel;
+		protected global::System.Web.UI.WebControls.GridView grid;
 
 		/// <summary>
-		/// lnkCategory control.
+		/// phToolbar control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkCategory;
+		protected global::System.Web.UI.WebControls.PlaceHolder phToolbar;
 
 		/// <summary>
-		/// lnlProduct control.
+		/// Label1 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnlProduct;
+		protected global::System.Web.UI.WebControls.Label Label1;
 
 		/// <summary>
-		/// lnkShoppingCart control.
+		/// lblTotal control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkShoppingCart;
+		protected global::System.Web.UI.WebControls.Label lblTotal;
 
 		/// <summary>
-		/// MainContent control.
+		/// btnUpdate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+		protected global::System.Web.UI.WebControls.Button btnUpdate;
+
+		/// <summary>
+		/// HyperLink1 control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
 	}
 }
