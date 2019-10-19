@@ -19,5 +19,13 @@ namespace DataAccess
 		}
 
 		public static int ImagesPerPage { get { return imagesPerPage; } }
+
+		public static int CartPersistDays
+		{
+			get
+			{
+				return int.Parse(ConfigurationManager.AppSettings["CartPersistDays"]);
+			}
+		}
 	}
 }

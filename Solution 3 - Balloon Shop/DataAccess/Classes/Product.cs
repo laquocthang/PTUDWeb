@@ -15,6 +15,8 @@ namespace DataAccess.Classes
 		public string Thumbnail { get; set; }
 		public string Image { get; set; }
 		public bool? PromoFront { get; set; }
+		public int Quantity { get; set; }
+		public double Subtotal { get; set; }
 
 		public Product()
 		{

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\Category.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\ShoppingCart.cs" />
     <Compile Include="GlobalConfiguration.cs" />
     <Compile Include="Link.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
