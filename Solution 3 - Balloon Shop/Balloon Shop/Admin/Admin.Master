@@ -18,6 +18,15 @@
 		<div class="container_16">
 			<div class="grid_16" id="header">
 				<h1>Administrator</h1>
+				<div id="userinfo">
+					<asp:LoginView runat="server" ID="LoginView1">
+						<LoggedInTemplate>
+							<asp:LoginName runat="server"
+								FormatString="Hello, <b>{0}</b>" />
+						</LoggedInTemplate>
+					</asp:LoginView>/
+					<asp:LoginStatus runat="server" ID="LoginStatus1"/>
+				</div>
 			</div>
 			<div class="grid_16">
 				<div id="mainmenu">

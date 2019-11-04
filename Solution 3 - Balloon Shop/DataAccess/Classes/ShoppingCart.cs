@@ -131,5 +131,20 @@ namespace DataAccess.Classes
 			int result = DataProvider.Instance.ExecuteNonQuery("ShoppingCart_DeleteOldCarts", days);
 			return result > 0;
 		}
+
+		public static int CreateOrder(string firstName, string lastName, string email, string phone, string address)
+		{
+			try
+			{
+				HttpContext context = HttpContext.Current;
+				string username = context.User.Identity.Name;
+				object result = DataProvider.Instance.ExecuteScalar("Order_Create", ShoppingCartId, username, firstName, lastName, email, phone, address);
+				return Convert.ToInt32(result);
+			}
+			catch
+			{
+				return -1;
+			}
+		}
 	}
 }

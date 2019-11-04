@@ -72,6 +72,7 @@
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\EditCategory.aspx" />
     <Content Include="Admin\EditProduct.aspx" />
+    <Content Include="Admin\Login.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Scripts\jquery-1.4.1.min.js" />
     <Content Include="Admin\Scripts\js.js" />
@@ -98,6 +99,7 @@
     <Content Include="Images\headerbackground.gif" />
     <Content Include="Images\search.gif" />
     <Content Include="Images\sign_in.gif" />
+    <Content Include="Login.aspx" />
     <Content Include="Oops.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="ProductImages\0276001.jpg" />
@@ -276,6 +278,13 @@
     <Compile Include="Admin\EditProduct.aspx.designer.cs">
       <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -370,6 +379,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Oops.aspx.cs">
       <DependentUpon>Oops.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -410,6 +426,7 @@
   <ItemGroup>
     <Content Include="Images\Thumbs.db" />
     <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\Web.config" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <Content Include="ProductImages\Thumbs.db" />
@@ -443,9 +460,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>63161</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63161/</IISUrl>
+          <IISUrl>http://localhost:50607/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
