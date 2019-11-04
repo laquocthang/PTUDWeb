@@ -73,6 +73,8 @@
     <Content Include="Admin\EditCategory.aspx" />
     <Content Include="Admin\EditProduct.aspx" />
     <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Order.aspx" />
+    <Content Include="Admin\OrderDetail.aspx" />
     <Content Include="Admin\Product.aspx" />
     <Content Include="Admin\Scripts\jquery-1.4.1.min.js" />
     <Content Include="Admin\Scripts\js.js" />
@@ -83,6 +85,7 @@
     <Content Include="Admin\Upload.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="Catalog.aspx" />
+    <Content Include="Checkout.aspx" />
     <Content Include="Controls\CartSummary.ascx" />
     <Content Include="Controls\CatList.ascx" />
     <Content Include="Controls\Pager.ascx" />
@@ -101,6 +104,7 @@
     <Content Include="Images\sign_in.gif" />
     <Content Include="Login.aspx" />
     <Content Include="Oops.aspx" />
+    <Content Include="OrderPlaced.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="ProductImages\0276001.jpg" />
     <Content Include="ProductImages\0326801.jpg" />
@@ -285,6 +289,20 @@
     <Compile Include="Admin\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OrderDetail.aspx.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OrderDetail.aspx.designer.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -319,6 +337,13 @@
     </Compile>
     <Compile Include="Catalog.aspx.designer.cs">
       <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\CartSummary.ascx.cs">
       <DependentUpon>CartSummary.ascx</DependentUpon>
@@ -392,6 +417,13 @@
     </Compile>
     <Compile Include="Oops.aspx.designer.cs">
       <DependentUpon>Oops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPlaced.aspx.cs">
+      <DependentUpon>OrderPlaced.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderPlaced.aspx.designer.cs">
+      <DependentUpon>OrderPlaced.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>

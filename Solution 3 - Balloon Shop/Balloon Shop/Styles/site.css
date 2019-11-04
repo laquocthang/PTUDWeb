@@ -366,3 +366,15 @@ a.button {
 	.userinfo h3 {
 		color: Black;
 	}
+
+.address .textEntry {
+	width: 400px;
+}
+
+.address textarea.textEntry {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.checkout {
+	margin-left: 0;
+}

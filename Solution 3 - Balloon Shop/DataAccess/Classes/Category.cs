@@ -6,6 +6,8 @@ namespace DataAccess
 {
 	public partial class Category
 	{
+		const string cacheKey = "Category_CachedData";
+
 		public int CategoryID { get; set; }
 		public string Name { get; set; }
 		public string Description { get; set; }
@@ -17,14 +19,26 @@ namespace DataAccess
 
 		public static List<Category> All()
 		{
-			return CBO.FillCollection<Category>(DataProvider.Instance.ExecuteReader("Category_All"));
+			List<Category> data = DataCache.GetCache(cacheKey) as List<Category>;
+			if (data == null)
+			{
+				data = CBO.FillCollection<Category>(
+				DataProvider.Instance.ExecuteReader("Category_All"));
+				if (data != null && data.Count > 0)
+				{
+					data.TrimExcess();
+					DataCache.SetCache(cacheKey, data);
+				}
+			}
+			return data;
 		}
 
 		public static Category Single(string categoryID)
 		{
 			try
 			{
-				return CBO.FillObject<Category>(DataProvider.Instance.ExecuteReader("Category_Single", Convert.ToInt32(categoryID)));
+				int id = int.Parse(categoryID);
+				return All().Find(delegate (Category c) { return c.CategoryID == id; });
 			}
 			catch (Exception)
 			{
@@ -37,7 +51,15 @@ namespace DataAccess
 			try
 			{
 				object result = DataProvider.Instance.ExecuteNonQueryWithOutput("@CategoryID", "Category_Add", category.CategoryID, category.Name, category.Description);
-				return Convert.ToInt32(result) > 0;
+				if (Convert.ToInt32(result) > 0)
+				{
+					DataCache.RemoveCache(cacheKey);
+					return true;
+				}
+				else
+				{
+					return false;
+				}
 			}
 			catch
 			{
@@ -50,7 +72,12 @@ namespace DataAccess
 			try
 			{
 				int result = DataProvider.Instance.ExecuteNonQuery("Category_Update", category.CategoryID, category.Name, category.Description);
-				return result > 0;
+				if (result > 0)
+				{
+					DataCache.RemoveCache(cacheKey);
+					return true;
+				}
+				else return false;
 			}
 			catch
 			{
@@ -63,7 +90,15 @@ namespace DataAccess
 			try
 			{
 				int result = DataProvider.Instance.ExecuteNonQuery("Category_Delete", Convert.ToInt32(categoryID));
-				return result > 0;
+				if (result > 0)
+				{
+					DataCache.RemoveCache(cacheKey);
+					return true;
+				}
+				else
+				{
+					return false;
+				}
 			}
 			catch
 			{

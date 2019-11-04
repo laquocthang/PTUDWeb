@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Category.cs" />
+    <Compile Include="Classes\Order.cs" />
+    <Compile Include="Classes\OrderDetail.cs" />
     <Compile Include="Classes\Product.cs" />
     <Compile Include="Classes\ShoppingCart.cs" />
     <Compile Include="GlobalConfiguration.cs" />

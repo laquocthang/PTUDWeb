@@ -11,97 +11,124 @@ namespace Balloon_Shop.Admin
 {
 
 
-	public partial class Admin
+	public partial class Admin_Order
 	{
 
 		/// <summary>
-		/// HeadContent control.
+		/// lblStatus control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+		protected global::System.Web.UI.WebControls.Label lblStatus;
 
 		/// <summary>
-		/// form1 control.
+		/// txtCount control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+		protected global::System.Web.UI.WebControls.TextBox txtCount;
 
 		/// <summary>
-		/// LoginView1 control.
+		/// btnGetByRecent control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.LoginView LoginView1;
+		protected global::System.Web.UI.WebControls.Button btnGetByRecent;
 
 		/// <summary>
-		/// LoginStatus1 control.
+		/// txtStartDate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.LoginStatus LoginStatus1;
+		protected global::System.Web.UI.WebControls.TextBox txtStartDate;
 
 		/// <summary>
-		/// lnkCPanel control.
+		/// txtEndDate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkCPanel;
+		protected global::System.Web.UI.WebControls.TextBox txtEndDate;
 
 		/// <summary>
-		/// lnkCategory control.
+		/// btnGetByDate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkCategory;
+		protected global::System.Web.UI.WebControls.Button btnGetByDate;
 
 		/// <summary>
-		/// lnlProduct control.
+		/// rangeStartDate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnlProduct;
+		protected global::System.Web.UI.WebControls.RangeValidator rangeStartDate;
 
 		/// <summary>
-		/// lnkShoppingCart control.
+		/// rangeEndDate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkShoppingCart;
+		protected global::System.Web.UI.WebControls.RangeValidator rangeEndDate;
 
 		/// <summary>
-		/// lnkOrder control.
+		/// cmpDate control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HyperLink lnkOrder;
+		protected global::System.Web.UI.WebControls.CompareValidator cmpDate;
 
 		/// <summary>
-		/// MainContent control.
+		/// validationSummary control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+		protected global::System.Web.UI.WebControls.ValidationSummary validationSummary;
+
+		/// <summary>
+		/// ddlStatus control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.DropDownList ddlStatus;
+
+		/// <summary>
+		/// btnGetByStatus control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button btnGetByStatus;
+
+		/// <summary>
+		/// repOrder control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Repeater repOrder;
 	}
 }
