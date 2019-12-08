@@ -28,10 +28,11 @@ namespace Balloon_Shop.Admin
 			string stringID = Request.Form["cid"] ?? "";
 			if (stringID != "")
 			{
-				//foreach (string id in stringID.Split(','))
-				//	Category.Delete(id);
-				//PopulateControls();
+				foreach (string id in stringID.Split(','))
+					Category.Delete(id);
+				PopulateControls();
 			}
 		}
+
 	}
 }

@@ -22,8 +22,7 @@ namespace DataAccess
 			List<Category> data = DataCache.GetCache(cacheKey) as List<Category>;
 			if (data == null)
 			{
-				data = CBO.FillCollection<Category>(
-				DataProvider.Instance.ExecuteReader("Category_All"));
+				data = CBO.FillCollection<Category>(DataProvider.Instance.ExecuteReader("Category_All"));
 				if (data != null && data.Count > 0)
 				{
 					data.TrimExcess();

@@ -6,7 +6,7 @@
 	<div class="title">Category</div>
 	<div class="toolbar">
 		<input type="button" value="Add new category" onclick="location.href = 'EditCategory.aspx'" />
-		<asp:Button Text="Delete selected" runat="server" ID="btnDelete" CssClass="multidelete" />
+		<asp:Button Text="Delete selected" runat="server" ID="btnDelete" CssClass="multidelete" OnClick="btnDelete_Click" />
 	</div>
 	<table class="list">
 		<tr>
